@@ -4,13 +4,16 @@ This project implements a Convolutional Neural Network (CNN) based on the LeNet 
 Overview
 This project implements a convolutional neural network (CNN) based on the LeNet architecture to classify whether a given blood cell image is infected with the Plasmodium parasite (responsible for Malaria) or not. The model is trained on a publicly available dataset of microscopic images of blood cells, where the cells are either parasitized or uninfected.
 
-Project Structure
-|-- data/                        # Directory to store the malaria dataset
-|-- models/                      # Directory to save trained models
-|-- src/                         # Source code for model building and training
-│   ├── malaria_detection.ipynb  # Main Colab notebook for the project
-|-- results/                 # Directory to save evaluation metrics and plots
-|-- README.md                # Project documentation (this file)
+Project structure:
+
+| Directory/File                   | Description                                     |
+|----------------------------------|-------------------------------------------------|
+| `data/`                          | Directory to store the malaria dataset          |
+| `models/`                        | Directory to save trained models                |
+| `src/`                           | Source code for model building and training     |
+| ├── `malaria_detection.ipynb`    | Main Colab notebook for the project             |
+| `results/`                       | Directory to save evaluation metrics and plots  |
+| `README.md`                      | Project documentation (this file)               |
 
 Dataset
 The dataset used for this project is the Malaria Cell Images Dataset from the National Institutes of Health (NIH). It contains over 27,000 images, with roughly half of the images showing parasitized cells and the other half showing healthy (uninfected) cells.
@@ -29,16 +32,16 @@ Output Layer: Sigmoid layer for binary classification (Parasitized vs. Uninfecte
 
 Here's the architecture in more detail:
 
-Layer	                  | Description
-----------------------------------------------------------------------
-Conv2D	                | 6 filters, kernel size 5x5, ReLU activation
-MaxPooling2D	          | Pool size 2x2
-Conv2D	                | 16 filters, kernel size 5x5, ReLU activation
-MaxPooling2D	          | Pool size 2x2
-Flatten	                | Reshapes the 2D matrices into 1D vectors
-Fully Connected (FC)	  | 100 units, ReLU activation
-Fully Connected (FC)	  | 10 units, ReLU activation
-Output (Softmax)	      | 1 units (Parasitized/Uninfected)
+| Layer               | Description                                  |
+|---------------------|----------------------------------------------|
+| Conv2D              | 6 filters, kernel size 5x5, ReLU activation  |
+| MaxPooling2D        | Pool size 2x2                                |
+| Conv2D              | 16 filters, kernel size 5x5, ReLU activation |
+| MaxPooling2D        | Pool size 2x2                                |
+| Flatten             | Reshapes the 2D matrices into 1D vectors     |
+| Fully Connected (FC)| 100 units, ReLU activation                   |
+| Fully Connected (FC)| 10 units, ReLU activation                    |
+| Output (Softmax)    | 1 unit (Parasitized/Uninfected)              |
 
 Training
 The model is trained using the Adam optimizer with a learning rate of 0.001. The loss function used is Binary cross-entropy since this is a binary classification task. The training process includes:
