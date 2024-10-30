@@ -61,7 +61,10 @@ After training, the model is evaluated on the test set using standard metrics:
 - **Confusion Matrix**
 
 ### Sample Results:
-The model achieves a classification accuracy of approximately 95% on the test set. The confusion matrix and classification report are generated to analyze performance further.
+The model achieves a classification accuracy of approximately 96% on the test set. The confusion matrix and classification report are generated to analyze performance further.
+
+### Model Performance and Evaluation:
+https://wandb.ai/PrakyathDl/Malaria_Diagnosis/reports/Malaria-Detection-with-LeNet-Model-Performance-and-Evaluation--Vmlldzo5OTU0MzAz
 
 ## Future Improvements
 - **Improve Accuracy**: Experimenting with deeper networks such as ResNet or transfer learning approaches might help improve classification accuracy.
