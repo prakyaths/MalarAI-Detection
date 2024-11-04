@@ -73,3 +73,6 @@ https://wandb.ai/PrakyathDl/Malaria_Diagnosis/reports/Malaria-Detection-with-LeN
 
 ## Conclusion
 This project demonstrates the application of CNNs for malaria detection using blood cell images. While the LeNet architecture provides good results, there is room for improvement through deeper models and more advanced techniques.
+
+## Acknowledgment
+This work is based on the curriculum provided by [freeCodeCamp.org](https://www.freecodecamp.org/). Special thanks to them for offering high-quality, accessible educational content for learners worldwide.
